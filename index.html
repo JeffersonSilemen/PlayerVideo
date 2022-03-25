@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./CSS/style.css">
+	<title>HTML Avançado</title>
+</head>
+<body>
+	<!-- Atributos Personalizados -->
+	<!-- <img id="like" src="Images/like.png"> -->
+	<!-- <ul id="lista" num="10">
+	</ul> -->
+
+
+	<!-- ATRIBUTOS PERSONALIZADOS PARTE 2 -->
+	<!-- <ul id="lista" data-n="25">
+	</ul> -->
+
+
+	<!-- VIDEO -->
+	<!-- <video preload="none" controls autoplay muted loop height="300px" src="./V/Boss.mp4" poster="./Images/like.png"></video> -->
+
+
+	<!-- VIDEO CONTROLE PARTE1 E PARTE2-->
+	<div class="content">
+	<div class="container">
+		<video id="video1" class="video" src="./V/Boss.mp4"></video>
+		<div class="controle">
+			<img class="btn" onclick="diminuir_vel()" src="./Images/menos.png">
+			<img class="btn" onclick="aumentar_vel()" src="./Images/mais.png">
+			<img class="btn" onclick="retroceder()" src="./Images/retroceder.png">
+			<img class="btn" onclick="avancar()" src="./Images/avancar.png">
+			<img class="btn" onclick="play()" src="./Images/play.png">
+			<img class="btn" onclick="stop()" src="./Images/stop.png">
+		</div>
+	</div>
+	</div>
+<script type="text/javascript" src="JS/script.js"></script>
+</body>
+</html>
