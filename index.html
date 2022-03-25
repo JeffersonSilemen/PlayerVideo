@@ -4,29 +4,30 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./CSS/style.css">
-	<title>HTML Avançado</title>
+	<title>Vídeo Player</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-	<!-- Atributos Personalizados -->
-	<!-- <img id="like" src="Images/like.png"> -->
-	<!-- <ul id="lista" num="10">
-	</ul> -->
+	<div class="github">
+		<a class="link" href="#" target="_blank">Jefferson Silemen</a>
+	</div>
 
 
-	<!-- ATRIBUTOS PERSONALIZADOS PARTE 2 -->
-	<!-- <ul id="lista" data-n="25">
-	</ul> -->
+	<div id="box_intro" class="box_intro">
+	<div class="intro">
+		<p>Sejam bem vindos ao fantástico mundo do super nintendo. Nessa fase você verá o melhor jogador do mundo destruir completamente uma
+			serpente venenosa. Tomem cuidado e apertem os cintos!
+		</p>
+		<button onclick="showTheVideo()">Let's go</button>
+	</div>
+	</div>
 
-
-	<!-- VIDEO -->
-	<!-- <video preload="none" controls autoplay muted loop height="300px" src="./V/Boss.mp4" poster="./Images/like.png"></video> -->
-
-
-	<!-- VIDEO CONTROLE PARTE1 E PARTE2-->
-	<div class="content">
-	<div class="container">
-		<video id="video1" class="video" src="./V/Boss.mp4"></video>
-		<div class="controle">
+	<div id="content" class="content">
+	<div onmouseover="showControls()" onmouseout="hiddenControls()" id="container" class="container">
+		<video id="video1" class="video" src="./V/Boss2.mp4"></video>
+		<div id="controls" class="controle">
 			<img class="btn" onclick="diminuir_vel()" src="./Images/menos.png">
 			<img class="btn" onclick="aumentar_vel()" src="./Images/mais.png">
 			<img class="btn" onclick="retroceder()" src="./Images/retroceder.png">
